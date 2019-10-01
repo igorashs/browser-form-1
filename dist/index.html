@@ -12,6 +12,44 @@
     <title>Browser Form 1</title>
   </head>
   <body>
+    <main>
+      <section class="form-section">
+        <div class="container">
+          <form class="form">
+            <!-- email -->
+            <div class="field">
+              <label for="email" class="label">email</label>
+              <input type="email" id="email" required />
+            </div>
+            <!-- email confirmation -->
+            <div class="field">
+              <label for="email-confirmation" class="label"
+                >email confirmation</label
+              >
+              <input type="email" id="email-confirmation" required />
+            </div>
+            <!-- zip code -->
+            <div class="field">
+              <label for="zip" class="label">zip code</label>
+              <input type="text" id="zip" />
+            </div>
+            <!-- password -->
+            <div class="field">
+              <label for="password" class="label">password</label>
+              <input type="password" id="password" required />
+            </div>
+            <!-- password confirmation -->
+            <div class="field">
+              <label for="password-confirm" class="label"
+                >password confirmation</label
+              >
+              <input type="password" id="password-confirm" required />
+            </div>
+            <input type="button" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
