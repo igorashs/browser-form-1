@@ -60,13 +60,13 @@ body {
   align-items: center;
   position: absolute;
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   bottom: -3rem;
   padding-left: 1em;
-  height: 3rem;
+  height: 4rem;
   border-radius: 1rem;
-  background-color: rgb(200, 198, 43);
-  color: rgb(33, 33, 33);
+  background-color: rgb(200, 43, 43);
+  color: #fff;
   box-shadow: 0 0 5px 2px #000;
   z-index: 4;
   visibility: hidden;
@@ -80,7 +80,7 @@ body {
   transform: translateX(-50%);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid rgb(200, 198, 43);
+  border-bottom: 10px solid rgb(200, 43, 43);
 }
 
 input {
@@ -90,21 +90,14 @@ input {
   border-radius: 1rem;
 }
 
-.label-validity.error {
-  background-color: rgb(200, 43, 43);
-  color: #fff;
-}
-
-.label-validity.error::before {
-  border-bottom: 10px solid rgb(200, 43, 43);
-}
-
 input[type='email']:focus + label,
-input[type='password']:focus + label {
+input[type='password']:focus + label,
+input[type='text']:focus + label {
   visibility: visible;
 }
 
 input[type='email']:focus + .hide,
-input[type='password']:focus + .hide {
+input[type='password']:focus + .hide,
+input[type='text']:focus + .hide {
   visibility: hidden;
 }
