@@ -90,15 +90,15 @@ input {
   border-radius: 1rem;
 }
 
-input[type='email']:focus + label,
-input[type='password']:focus + label,
-input[type='text']:focus + label {
+input[type='email'] + .error,
+input[type='password'] + .error,
+input[type='text'] + .error {
   visibility: visible;
 }
 
-input[type='email']:focus + .hide,
-input[type='password']:focus + .hide,
-input[type='text']:focus + .hide {
+input[type='email']:focus + .valid,
+input[type='password']:focus + .valid,
+input[type='text']:focus + .valid {
   visibility: hidden;
 }
 
