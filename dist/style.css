@@ -102,7 +102,7 @@ input[type='text']:focus + .hide {
   visibility: hidden;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 940px) {
   .label-validity {
     bottom: 1rem;
     right: -100%;
