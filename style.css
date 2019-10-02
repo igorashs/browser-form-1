@@ -32,7 +32,7 @@ body {
   align-items: center;
   background-color: rgb(0, 83, 179);
   box-shadow: 0 0 5px 2px #000;
-  border-radius: 4rem;
+  border-radius: 2rem;
   padding: 1rem;
 }
 
@@ -100,4 +100,16 @@ input[type='email']:focus + .hide,
 input[type='password']:focus + .hide,
 input[type='text']:focus + .hide {
   visibility: hidden;
+}
+
+@media (min-width: 700px) {
+  .label-validity {
+    bottom: 1rem;
+    right: -100%;
+  }
+
+  .label-validity::before {
+    top: 50%;
+    left: 0;
+  }
 }
