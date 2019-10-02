@@ -20,6 +20,9 @@
             <div class="field">
               <label for="email" class="label">email</label>
               <input type="email" id="email" required />
+              <label for="email" class="label-validity show warring"
+                >example@example.com</label
+              >
             </div>
             <!-- email confirmation -->
             <div class="field">
@@ -27,6 +30,11 @@
                 >email confirmation</label
               >
               <input type="email" id="email-confirmation" required />
+              <label
+                for="email-confirmation"
+                class="label-validity show warring"
+                >email should coincide</label
+              >
             </div>
             <!-- zip code -->
             <div class="field">
@@ -37,6 +45,9 @@
             <div class="field">
               <label for="password" class="label">password</label>
               <input type="password" id="password" required />
+              <label for="password" class="label-validity show warring"
+                >min 8 characters</label
+              >
             </div>
             <!-- password confirmation -->
             <div class="field">
@@ -44,8 +55,11 @@
                 >password confirmation</label
               >
               <input type="password" id="password-confirm" required />
+              <label for="password-confirm" class="label-validity show warring"
+                >password should coincide</label
+              >
             </div>
-            <input type="button" value="Submit" />
+            <input type="button" value="Submit" class="button js-btn-submit" />
           </form>
         </div>
       </section>
